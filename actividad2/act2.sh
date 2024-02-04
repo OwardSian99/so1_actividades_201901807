@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -p "Ingresar Usuario: " GITHUB_USER
+GITHUB_USER="OwardSian99"
 
 consultaUser=$(curl -s https://api.github.com/users/"$GITHUB_USER")
 
@@ -16,7 +16,7 @@ ruta_log="/tmp/$fecha_actual/saludos.log"
 
 mkdir -p "$(dirname "$ruta_log")"
 
-echo "Hola $GITHUB_USER. User ID: $id_entrada. Cuenta fue creada el: $creacion_dato." >> "$ruta_log"
+echo "Hola $GITHUB_USER. User ID: $id_entrada. Cuenta fue creada el: $crear." >> "$ruta_log"
 
 
 (crontab -l ; echo "*/5 * * * * /home/oward/Escritorio/SOPES1/so1_actividades_201901807/actividad2/act2.sh") | crontab -
