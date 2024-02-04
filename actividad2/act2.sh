@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GITHUB_USER="OwardSian99"
+read -p "Ingresar Usuario: " GITHUB_USER
 
 consultaUser=$(curl -s https://api.github.com/users/"$GITHUB_USER")
 
