@@ -1,0 +1,9 @@
+[Unit]
+Description=Actividad3_201901807
+
+[Service]
+Type=simple
+ExecStart=/home/oward/act3_201901807.sh
+
+[Install]
+WantedBy=multi-user.target
